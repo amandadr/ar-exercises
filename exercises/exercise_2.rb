@@ -4,4 +4,9 @@ require_relative './exercise_1'
 puts "Exercise 2"
 puts "----------"
 
-# Your code goes here ...
+# Your code goes here ... 
+@store1 = Store.first
+@store2 = Store.find_by(id: 2)
+
+@store1.name = "Not-Burnaby"
+@store1.save
